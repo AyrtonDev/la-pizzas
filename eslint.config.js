@@ -8,6 +8,7 @@ import pluginImport from 'eslint-plugin-import';
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import prettier from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
+import simpleImportSort from 'eslint-plugin-simple-import-sort'
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -33,6 +34,7 @@ export default tseslint.config(
       'react-refresh': reactRefresh,
       'jsx-a11y': pluginJsxA11y,
       prettier,
+      'simple-import-sort': simpleImportSort
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -41,6 +43,8 @@ export default tseslint.config(
       'import/extensions': 'off',
       'import/no-unresolved': 'off',
       'prettier/prettier': 'error',
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
