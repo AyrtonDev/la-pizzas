@@ -22,7 +22,7 @@ export default function MenuPage() {
   return (
     <ResponsiveLayout>
       {pizzas && (
-        <div className="grid h-full w-full grid-cols-1 place-items-center gap-20 py-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid h-full w-full grid-cols-1 place-items-center gap-10 py-4 sm:gap-15 md:grid-cols-2 lg:grid-cols-3">
           {pizzas.map((pizza) => (
             <CardProduct pizza={pizza} />
           ))}
