@@ -5,7 +5,7 @@
       "name": "Margherita",
       "price": 29.9,
       "description": "Molho de tomate, mussarela e manjericão fresco.",
-      "image": "margherita.jpg",
+      "image": "margherita.png",
       "available": true
     },
     {
@@ -13,7 +13,7 @@
       "name": "Pepperoni",
       "price": 34.9,
       "description": "Molho de tomate, mussarela e fatias de pepperoni.",
-      "image": "pepperoni.jpg",
+      "image": "pepperoni.png",
       "available": true
     },
     {
@@ -21,7 +21,7 @@
       "name": "Quatro Queijos",
       "price": 37.5,
       "description": "Mussarela, gorgonzola, parmesão e catupiry.",
-      "image": "quatro-queijos.jpg",
+      "image": "quatro-queijos.png",
       "available": false
     },
     {
@@ -29,7 +29,7 @@
       "name": "Calabresa",
       "price": 32.0,
       "description": "Calabresa fatiada, cebola roxa e orégano.",
-      "image": "calabresa.jpg",
+      "image": "calabresa.png",
       "available": true
     },
     {
@@ -37,7 +37,7 @@
       "name": "Frango com Catupiry",
       "price": 36.0,
       "description": "Frango desfiado, catupiry e milho.",
-      "image": "frango-catupiry.jpg",
+      "image": "frango-catupiry.png",
       "available": true
     },
     {
@@ -45,7 +45,7 @@
       "name": "Vegetariana",
       "price": 33.5,
       "description": "Pimentões, cebola, champignon e azeitonas.",
-      "image": "vegetariana.jpg",
+      "image": "vegetariana.png",
       "available": true
     },
     {
@@ -53,7 +53,7 @@
       "name": "Portuguesa",
       "price": 35.9,
       "description": "Presunto, ovo, cebola, azeitona e mussarela.",
-      "image": "portuguesa.jpg",
+      "image": "portuguesa.png",
       "available": false
     },
     {
@@ -61,7 +61,7 @@
       "name": "Toscana",
       "price": 39.0,
       "description": "Linguiça toscana, cebola caramelizada e parmesão.",
-      "image": "toscana.jpg",
+      "image": "toscana.png",
       "available": true
     },
     {
@@ -69,7 +69,7 @@
       "name": "Cheddar Bacon",
       "price": 40.0,
       "description": "Molho cheddar cremoso com bacon crocante.",
-      "image": "cheddar-bacon.jpg",
+      "image": "cheddar-bacon.png",
       "available": true
     },
     {
@@ -77,7 +77,7 @@
       "name": "Doce de Chocolate",
       "price": 27.5,
       "description": "Chocolate ao leite, granulado e leite condensado.",
-      "image": "chocolate.jpg",
+      "image": "chocolate.png",
       "available": true
     }
   ]
