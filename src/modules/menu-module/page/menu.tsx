@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import type { PizzaModel } from '@/domain/models/pizza-model';
+import { ResponsiveLayout } from '@/shared/layout/responsive-layout';
 
 import { CardProduct } from '../components/card-product';
 import { getPizzasService } from '../services/pizza-service';
@@ -19,14 +20,14 @@ export default function MenuPage() {
   }
 
   return (
-    <div className="">
+    <ResponsiveLayout>
       {pizzas && (
-        <div className="flex flex-col gap-20 pt-5">
+        <div className="grid h-full w-full grid-cols-1 place-items-center gap-20 py-4 md:grid-cols-2 lg:grid-cols-3">
           {pizzas.map((pizza) => (
             <CardProduct pizza={pizza} />
           ))}
         </div>
       )}
-    </div>
+    </ResponsiveLayout>
   );
 }
