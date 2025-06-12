@@ -11,11 +11,13 @@ export const CardProduct = ({ pizza }: Props) => {
   return (
     <div className="bg-light h-102 w-74 rounded-xl p-4">
       <div className="flex h-full w-full flex-col items-center justify-between">
-        <img
-          src={`/images/pizzas/${pizza.image}`}
-          alt={`pizza ${pizza.name}`}
-          className="bg-detail-y/40 w-60 rounded-xl"
-        />
+        <div className="bg-detail-y/40 flex size-64 items-center justify-center overflow-hidden rounded-xl">
+          <img
+            src={`/images/pizzas/${pizza.image}`}
+            alt={`pizza ${pizza.name}`}
+            className="h-10/12 w-auto object-cover"
+          />
+        </div>
 
         <span className="text-primary text-center text-2xl font-bold">{pizza.name}</span>
         <div className="flex justify-center gap-5">
