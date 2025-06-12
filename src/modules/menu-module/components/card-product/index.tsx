@@ -1,5 +1,7 @@
+import type { CartItem } from '@/domain/models/cart-model';
 import type { PizzaModel } from '@/domain/models/pizza-model';
 import { Button } from '@/shared/components/ui/button';
+import { useCart } from '@/shared/contexts/cart/cart-context';
 
 import { formatCurrency } from '../../helpers/format';
 
@@ -8,6 +10,19 @@ type Props = {
 };
 
 export const CardProduct = ({ pizza }: Props) => {
+  const { addToCart } = useCart();
+
+  function handleAddToCart() {
+    const item: CartItem = {
+      id: pizza.id,
+      image: pizza.image,
+      price: pizza.price,
+      name: pizza.name,
+      quantity: 1,
+    };
+    addToCart(item);
+  }
+
   return (
     <div className="bg-light h-102 w-74 rounded-xl p-4">
       <div className="flex h-full w-full flex-col items-center justify-between">
@@ -24,7 +39,9 @@ export const CardProduct = ({ pizza }: Props) => {
           <Button className="text-light text-xl font-bold">Ver Detalhes</Button>
           <span className="text-primary text-xl font-bold">{formatCurrency(pizza.price)}</span>
         </div>
-        <Button className="text-light w-full text-xl font-bold">Adicionar ao Carrinho</Button>
+        <Button onClick={handleAddToCart} className="text-light w-full text-xl font-bold">
+          Adicionar ao Carrinho
+        </Button>
       </div>
     </div>
   );
