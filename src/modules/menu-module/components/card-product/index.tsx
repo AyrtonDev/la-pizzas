@@ -3,6 +3,7 @@ import type { PizzaModel } from '@/domain/models/pizza-model';
 import { Button } from '@/shared/components/ui/button';
 import { useCart } from '@/shared/contexts/cart/cart-context';
 
+import { DetailModal } from '../../detail-modal';
 import { formatCurrency } from '../../helpers/format';
 
 type Props = {
@@ -36,7 +37,9 @@ export const CardProduct = ({ pizza }: Props) => {
 
         <span className="text-primary text-center text-2xl font-bold">{pizza.name}</span>
         <div className="flex justify-center gap-5">
-          <Button className="text-light text-xl font-bold">Ver Detalhes</Button>
+          <DetailModal pizza={pizza}>
+            <Button className="text-light text-xl font-bold">Ver Detalhes</Button>
+          </DetailModal>
           <span className="text-primary text-xl font-bold">{formatCurrency(pizza.price)}</span>
         </div>
         <Button onClick={handleAddToCart} className="text-light w-full text-xl font-bold">
