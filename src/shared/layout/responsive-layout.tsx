@@ -1,7 +1,12 @@
-import { type PropsType } from '../types/props';
+import { Outlet } from 'react-router-dom';
 
-export const ResponsiveLayout = ({ children }: PropsType) => (
-  <div className="flex h-full min-h-screen w-full min-w-screen justify-center">
-    <div className="flex h-full w-full flex-col px-2 sm:max-w-7xl sm:px-0">{children}</div>
-  </div>
+import Header from '../components/header';
+
+export const ResponsiveLayout = () => (
+  <main className="flex h-full min-h-screen w-full min-w-screen justify-center">
+    <section className="flex h-full w-full flex-col sm:max-w-7xl sm:px-0">
+      <Header />
+      <Outlet />
+    </section>
+  </main>
 );
