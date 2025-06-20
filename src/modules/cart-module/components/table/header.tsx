@@ -1,9 +1,9 @@
 export const HeaderTable = () => {
   return (
-    <div className="flex justify-between gap-15">
-      <div>Pizzas</div>
-      <div>Valor</div>
-      <div>Quantidade</div>
+    <div className="flex justify-between">
+      <span className="w-14">Pizzas</span>
+      <span>Valor</span>
+      <span>Quantidade</span>
     </div>
   );
 };
